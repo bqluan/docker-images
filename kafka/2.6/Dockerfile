@@ -1,7 +1,7 @@
-FROM bqluan/docker-openjdk:8-jre-alpine
+FROM bqluan/openjdk:8-jre-alpine
 
-ENV KAFKA_VER 2.4.1
-ENV SCALA_VER 2.12
+ENV KAFKA_VER 2.6.0
+ENV SCALA_VER 2.13
 
 # bash is needed by kafka's startup scripts
 RUN apk --no-cache add \
